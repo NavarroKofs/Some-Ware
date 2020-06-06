@@ -321,7 +321,7 @@ footer {
 
 @media only screen and (max-width: 620px) {
     .nav-menu {
-        background-image: url(burguer.svg);
+        background-image: url(../images/icons/burguer.svg);
         width: 30px;
         height: 25px;
         background-size: cover;
@@ -332,7 +332,7 @@ footer {
     }
 
     header {
-        background-image: url(logo-vectores.png);
+        background-image: url(../images/logo-vectores.png);
         background-size: fill;
         margin: 20px 0;
     }
@@ -347,7 +347,7 @@ footer {
     }
 
     .nav-logo > .logo {
-        content: url(some-ware.png);
+        content: url(../images/some-ware.png);
         object-fit: cover;
     }
 
