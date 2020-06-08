@@ -21,6 +21,17 @@ body {
 	font-family: var(--font-secondary);
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--white);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--gray);
+    border-radius: 8px;
+    border-right: 2px solid var(--white);
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -31,6 +42,7 @@ main {
 }
 
 header {
+    z-index: 1;
     margin: 30px auto;
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -176,7 +188,7 @@ section {
     text-transform: uppercase;
     font-size: 32px;
     text-align: center;
-    width: 167px;
+    width: 152px;
     height: 48px;
 }
 
@@ -220,18 +232,21 @@ section {
 .about-us {
     margin: 20px 0;
     width: 100%;
+    height: 100%;
 }
 
 .about-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
     margin-bottom: 2%;
 }
 
 .about-content > .about-picture {
     width: 49%;
     height: 100%;
+    position: left;
 }
 
 .about-content > .about-picture > img {
@@ -252,6 +267,10 @@ section {
 .about-content > .about-content-text > p {
     margin-top: 20px;
     font-size: 16px;
+}
+
+.about-us > .divisor {
+    display: none;
 }
 
 main > .large-divisor {
@@ -357,6 +376,25 @@ footer {
 
     .services > .service {
         margin: 24px 0;
+    }
+
+    .about-content > .about-picture {
+        width: auto;
+        margin: 16px 0 0;
+    }
+    
+    .about-content > .about-content-text {
+        width: auto;
+        margin: 16px 0;
+    }
+
+    .about-content {
+        margin-bottom: 0;
+        flex-wrap: wrap;
+    }
+
+    .about-us > .divisor {
+        display: flex;
     }
 }
 
