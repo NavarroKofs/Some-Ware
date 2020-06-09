@@ -24,7 +24,7 @@
   
   header {
       z-index: 1;
-      margin: 0px auto;
+      margin: 30px auto;
       position: -webkit-sticky; /* Safari */
       position: sticky;
       top: 0;
