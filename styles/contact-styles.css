@@ -89,8 +89,7 @@
       position: relative;
       background-color: var(--black);
       height: 24vw;
-      box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
-      -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+
       border-radius: 5px 5px 0px 0px;
   }
 
@@ -140,8 +139,7 @@
       height: 40px;
       width: 100%;
       background-color: var(--black);
-      box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
-      -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+
   }
 
   .text-info p {
@@ -415,7 +413,6 @@
 
     .ways-contact {
         width: 100%;
-        margin-top: 32px;
     }
 
     .form-contact {
@@ -442,5 +439,25 @@
         font-weight: bold;
         font-size: 1em;
         margin-bottom: 12px;
+    }
+
+    .divisor {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .tiny-divisor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+        width: 40%;
+    }
+    
+    .tiny-divisor div {
+        border-bottom: solid .5px var(--gray);
+        width: 100%;
     }
 }
