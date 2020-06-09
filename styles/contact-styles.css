@@ -1,0 +1,446 @@
+:root {
+    /*  Add your CSS variables here! */
+    --font-primary: 'Roboto';
+    --font-secondary: 'Lato';
+    --white: #FAFAFA;
+    --gray: #C1C7C9;
+    --black: #000000;
+    --orange: #f17c47;
+  }
+  
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add your CSS code below */
+  body {
+      background-color: var(--white);
+      font-family: var(--font-secondary);
+  }
+  
+  header {
+      z-index: 1;
+      margin: 0px auto;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+      background-color: var(--white);
+  }
+  
+  .navigation {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      padding: 10px 0;
+  }
+  
+  .nav-logo {
+      width: 200px;
+      height: 48px;
+  }
+  
+  .nav-logo > .logo {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+  }
+  
+  .nav-menu {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      flex-wrap: wrap;
+  }
+  
+  .nav-menu > li > a {
+      text-decoration: none;
+      color: var(--black);
+      font-size: 16px;
+      font-weight: normal;
+      margin-left: 48px;
+      text-transform: uppercase;
+  }
+  
+  .nav-menu > li > .bold-option {
+      font-weight: bold;
+  }
+  
+  main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /*align-items: center;*/
+      width: 80%;
+      max-width: 1366px;
+      margin: 0 auto;
+  }
+
+  .banner {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      background-color: var(--black);
+      height: 24vw;
+      box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+      -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+      border-radius: 5px 5px 0px 0px;
+  }
+
+  .banner-image {
+      width: 100%;
+      height: 100%;
+  }
+
+  .banner-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0px 0px;
+      opacity: 0.6;
+  }
+
+  .banner-content {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      color: var(--white);
+      text-align: center;
+      position: absolute;
+      margin: 40px;
+  }
+
+  .banner-content h1{
+      font-family: var(--font-primary);
+      font-size: 4.5em;
+  }
+
+  .banner-content p{
+      font-size: 1.75em;
+      line-height: 1.5;
+  }
+
+  .banner-content span{
+      color: var(--orange);
+      font-weight: bold;
+  }
+
+  .text-info{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 40px;
+      width: 100%;
+      background-color: var(--black);
+      box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+      -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+  }
+
+  .text-info p {
+    color: var(--white);
+    font-size: 1.25em;
+  }
+
+  .contact-section{
+      align-self: center;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      width: 100%;
+      margin: 40px 0px;
+  }
+
+  .ways-contact {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .ways-contact ul {
+      width: 80%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .ways-contact ul li {
+      display: flex;
+      align-items: center;
+      padding: 0px;
+      margin-bottom: 12px;
+  }
+
+  .ways-contact ul li img {
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+  }
+
+  .ways-contact ul li span {
+      font-weight: bold;
+  }
+
+  .form-contact {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .form-contact form {
+    width: 80%;
+    padding: 0px;
+  }
+
+ 
+
+  .form-contact form input[type="text"],
+  .form-contact form textarea {
+      font-family: 'Lato';
+      font-size: 20px;
+      border: none;
+      border-radius: 6px;
+      outline: 0;
+      padding: 12px;
+      width: 100%;
+      box-sizing: border-box; 
+      -webkit-box-sizing: border-box;
+      background-color: #E6E6E6;
+      box-shadow: 1px 1px 1px rgba(0,0,0,0.03) inset;
+      -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.03) inset;
+      margin-bottom: 24px;
+  }
+
+  .form-contact form textarea {
+      resize: none;
+      height: 160px;
+      display: block;
+  }
+
+  .form-contact form input[type="text"]:focus,
+  .form-contact form textarea:focus {
+      background: #d2d9dd;
+      transition: background .4s ease-in-out;
+     
+  }
+
+  .buttons-contact {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .buttons-contact button {
+    border: none;
+    width: 100px;
+    font-size: 20px;
+    color: var(--white);
+    padding: 10px 0px;
+  }
+
+  .cancel-button {
+      background-color: var(--gray);
+      margin-right: 8px;
+  }
+
+  .send-button {
+      background-color: var(--black);
+  }
+
+  footer {
+    background-color: var(--black);
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 144px;
+}
+
+.footer-icons > .icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin: 8px;
+}
+
+.footer-icons > .icon > img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-rights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 144px;
+    width: 80%;
+}
+
+.footer-rights > p {
+    color: var(--white);
+    margin: 4px 0;
+}
+
+.large-divisor {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.large-divisor div {
+    border-bottom: solid .5px var(--gray);
+    width: 100%;
+}
+
+.text-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1030px) {
+    main {
+        width: 100%
+    }
+
+    .contact-section{
+        width: 100%;
+    }
+
+    .banner {
+        border-radius: 0;
+    }
+
+    .banner-content {
+        max-width: 360px;
+        margin: 1rem;
+    }
+
+    .banner-content h1 {
+        font-size: 2.5em;
+    }
+
+    .banner-content p {
+        font-size: 1.25em;
+    }
+
+    .text-info p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .nav-menu {
+        background-image: url(../images/icons/burguer.svg);
+        width: 30px;
+        height: 25px;
+        background-size: cover;
+    }
+
+    .nav-menu > li {
+        display: none;
+    }
+
+    header {
+        background-image: url(../images/logo-vectores.png);
+        background-size: fill;
+        margin: 20px 0;
+    }
+
+    .navigation {
+        height: 66px;
+    }
+
+    .nav-logo {
+        width: 108px;
+        height: 24px;
+    }
+
+    .nav-logo > .logo {
+        content: url(../images/some-ware.png);
+        object-fit: cover;
+    }
+
+    main {
+        width: 100%
+    }
+
+    .contact-section{
+        width: 100%;
+    }
+
+    .banner {
+        height: 160px;
+        border-radius: 0;
+        align-items: center;
+    }
+
+    .banner-content {
+        max-width: 280px;
+        margin: 1rem;
+    }
+
+    .banner-content h1 {
+        font-size: 2.5em;
+    }
+
+    .banner-content p {
+        font-size: 1.25em;
+    }
+
+    .text-info {
+        display: none;
+    }
+
+    .contact-section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .ways-contact {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .form-contact {
+        width: 100%;
+    }
+
+    .form-contact form input[type="text"],
+    .form-contact form textarea {
+        font-size: 1em;
+    }
+
+    .buttons-contact button {
+        font-size: 1em;
+    }
+
+    .ways-contact ul li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-mobile {
+        text-align: center;
+        display: block;
+        font-weight: bold;
+        font-size: 1em;
+        margin-bottom: 12px;
+    }
+}
