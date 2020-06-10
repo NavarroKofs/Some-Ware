@@ -358,19 +358,19 @@ footer {
 }
 
 .yt-icon:hover {
-    content: url(../icons/youtube-original.svg);
+    content: url(../images/icons/youtube-original.svg);
 }
 
 .fb-icon:hover {
-    content: url(../icons/facebook-original.svg);
+    content: url(../images/icons/facebook-original.svg);
 }
 
 .in-icon:hover {
-    content: url(../icons/linkedin-original.svg);
+    content: url(../images/icons/linkedin-original.svg);
 }
 
 .tw-icon:hover {
-    content: url(../icons/twitter-original.svg);
+    content: url(../images/icons/twitter-original.svg);
 }
 
 .footer-rights {
@@ -478,7 +478,7 @@ footer {
 
 @media only screen and (max-width: 620px) {
     .nav-menu {
-        background-image: url(../icons/burguer.svg);
+        background-image: url(../images/icons/burguer.svg);
         width: 30px;
         height: 25px;
         background-size: cover;
