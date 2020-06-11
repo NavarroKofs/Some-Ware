@@ -265,7 +265,6 @@
       margin: 4px 0;
   }
   
-  
   .large-divisor {
       display: flex;
       justify-content: center;
@@ -326,8 +325,6 @@
       .banner-title-service > h1{
         font-size: 40px;
       }
-  
-  
   }
   
   @media only screen and (max-width: 620px) {
@@ -392,5 +389,4 @@
       .banner-title-service > h1{
         font-size: 20px;
       }
-  
   }
