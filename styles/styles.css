@@ -539,4 +539,12 @@ footer {
     .banner-info > a {
         position: relative;
     }
+
+    .tiny-divisor {
+        padding: 0;
+    }
+
+    .tiny-divisor div {
+        width: 40%;
+    }
 }
